@@ -54,6 +54,7 @@ export default {
 				controls: true,
 				autoplay: 'play',
 				preload: "auto",
+				//set the scale of the player by using width and height attributes.
 				// width: "1200px",
 				// height: "720px",
 			});
