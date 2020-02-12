@@ -12,9 +12,9 @@
 		    <div class="col-md-2"></div>
 		</div>
 		<div class="col-md-12">
-			<button class="btn btn-default" @click="viewChanger('BriefIntro')">简介</button>
-			<button class="btn btn-default" @click="viewChanger('Achievements')">成果与资质</button>
-			<button class="btn btn-default" @click="viewChanger('EnvironmentInfo')">办公环境</button>
+			<button class="btn btn-default" @click="viewChanger('BriefIntro')" style="width: 100px;">简介</button>
+			<button class="btn btn-default" @click="viewChanger('Achievements')" style="width: 100px;">成果与资质</button>
+			<button class="btn btn-default" @click="viewChanger('EnvironmentInfo')" style="width: 100px;">办公环境</button>
 			<component :is="currentView"></component>
 		</div>
 		<p>&nbsp;</p>
