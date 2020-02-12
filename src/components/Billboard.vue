@@ -14,12 +14,12 @@
 
 <script type="text/javascript">
 export default {
-  data () {
-    return {
-      title: '西安前观测控技术有限公司',
-      translation: 'Xi\'an Qianguan Measurement and Control Technology Co., LTD'
-    }
-  }
+	data () {
+		return {
+			title: '西安前观测控技术有限公司',
+			translation: 'Xi\'an Qianguan Measurement and Control Technology Co., LTD'
+		}
+	}
 }
 
 </script>

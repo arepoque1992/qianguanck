@@ -1,10 +1,11 @@
 <template>
-    <div id="app">
-        <NavBar/>
-        <Billboard/>
-        <router-view/>
-        <Footer></Footer>
-  </div>
+	<div id="app">
+		<NavBar/>
+		<!-- <Billboard/> -->
+		<!-- <router-view/> -->
+		<div :style="{minHeight: Height+'px'}"><router-view/></component></div>
+		<Footer></Footer>
+	</div>
 </template>
 
 <script>
@@ -12,11 +13,20 @@ import NavBar from './components/NavBar.vue'
 import Billboard from './components/Billboard'
 import Footer from './components/Footer'
 export default {
-  components: {
-    NavBar,
-    Billboard,
-    Footer
-  }
+	components: {
+		NavBar,
+		Billboard,
+		Footer
+	},
+	data() {
+		return {
+			Height: 0,
+		}
+	},
+	mounted() {
+		this.Height = document.documentElement.clientHeight - 170;
+		window.onresize = ()=> {this.Height = document.documentElement.clientHeight -170};
+	},
 }
 </script>
 

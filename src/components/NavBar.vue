@@ -9,23 +9,23 @@
 
 <script type="text/javascript">
 export default {
-  data () {
-    return {
-      logoTop: require('../assets/common/logo_top.jpg'),
-      navBar: [{
-        url: '/',
-        tag: '首      页'
-      },
-      {
-        url: '/about',
-        tag: '公司介绍'
-      },
-      {
-        url: '/products',
-        tag: '产品中心'
-      }]
-    }
-  }
+	data () {
+		return {
+			logoTop: require('../assets/common/logo_top.jpg'),
+			navBar: [{
+				url: '/',
+				tag: '首      页'
+			},
+			{
+				url: '/about',
+				tag: '公司介绍'
+			},
+			{
+				url: '/products',
+				tag: '产品中心'
+			}]
+		}
+	}
 }
 
 </script>
